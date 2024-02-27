@@ -342,3 +342,7 @@ body {
     
     .form-row button {
         margin-left: 120px;}      
+
+      .greeting {
+        color: red;
+      }
