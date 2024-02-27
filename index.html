@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="index.html" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b0caed928f.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js"  crossorigin="anonymous"></script>
+
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+    
+         <header id="encabezado">
+           <a href="index.html"><i class="fa-solid fa-bolt"         
+            style="color: #77c9b7;"></i> </a>
+              <h1 class=".logo"><a href="https://www.linkedin.com/in/angela-romina-sequeira-santos-183309200/"
+              class="fuente-acento">Angela Sequeira</a></h1>
+             
+            
+            
+            <nav> 
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                  <i class="fa-solid fa-bars"></i>
+                </label>
+               
+               <ul class="Menu"> 
+                    <li> <a href="index.html">inicio</a></li> 
+                    <li> <a href="#sección-1">Acerca de mi</a></li> 
+                    <li> <a href="#Formación">Formación</a></li> 
+                    <li> <a href="#Contacto">Contacto</a></li> 
+                </ul>
+                 
+            </nav>
+         </header>
+       
+        <main id="sección-principal">
+          <h2>Bienvenidos a mi página web</h2>
+         <section class="sección-1"> 
+              <div class="acerca de"></div>
+                <h3> Acerca de mí</h3>
+                <p>
+                   ¡Hola! 
+                  
+                   Mi nombre es Angela, pueden llamarme Angie. 
+                   Desde niña me ha llamado la atención la tecnología: computadoras, celulares, internet, etc. Siempre quise ver la parte oculta de este mundo. Hace poco me anime a dar los primeros pasos en el sector de las tecnologias de la información. Acompañenme a contarles mi recorrido...
+                </p>
+                <div> <img src="Imagenes/MiFoto1.jpg" alt="imagen poratda"></div>
+            </div>
+         </section>
+           <section class="sección-2"> <img src="Imagenes/Acercademi1.jpeg" alt=""></section>
+
+           <section class="sección-3"> 
+            <div class="Formación"></div>
+              <h4>Mi formación en el mundo TI</h4>
+              
+              <p>Primero queiro contarles que esta es la primera página web que estoy aprendiendo a crear desde cero. <p>
+                
+                <p>Todo empezo en el año 2023 cuando forme parte de "Jovenes a progarmar" de Ceibal, me capacite en Testing funcional. Luego de finalizada esta formación, en el verano de el año 2024 me encuentro realizando el intensivo de verano capacitandome en programación con la empresa Egg con su curso "Web desde cero".</p>
+                
+                <p>Hace poco me inscribí a un programa de capacitación en ciberseguridad que fue lanzado por la empresa Telefónica Movistar Uruguay en conjunto con INEFOP y fui seleccionada para participar de la segunda edición del mismo. Estoy muy contenta por seguir avanzando y ampliendo mis conocimientos en esta área.</p>
+
+                <section class="sección-3"> <img src="Imagenes/JovenesAProgramar.jpg" alt="Curso de Testing">
+                <img src="Imagenes/Egg-logo.jpg" alt="Curso programación desde cero">
+              <img src="Imagenes/MujeresHackers.jpg" alt="Curso de ciberseguridad"></section>
+
+              <main> <div class="form-header">
+                <h5>Tu mensaje:</h5>
+                <p><em>¡Comparte tu opnión o consejo!</em></p>
+          
+                <form action="" method="get" class="formulario" id="form">
+                  <div class="form-row">
+                      <label for="nombre">Nombre</label>
+                      <input id="nombre" name="nombre" type="text" />
+                    </div>
+                    <div class="form-row">
+                      <label for="email">Email</label>
+                      <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="Shakira@gmail.com"
+                      />
+                    </div>
+                    <div class="form-row">
+                      <label for="mensaje">Mensaje</label>
+                      <textarea id="mensaje" name="mensaje"></textarea>
+                    </div>
+                    <div class="form-row">
+                      <button>Enviar</button>
+                    </div>
+                </form>
+              </div>
+              </main>
+              
+
+        </main> 
+       <main><div id="#Contacto"> <footer> Contacto:
+       <ul>
+        <li> <a href="https://www.linkedin.com/in/angela-romina-sequeira-santos-183309200/">LinkedIn</a></li> 
+        <li> <a href="https://discord.com/channels/@me">Discord</a></li>
+        <li>Gmail: angelasequeira17897@gmail.com</li> </ul>
+       </footer></div></main>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,344 @@
+
+
+body {
+
+    font-family: "Open Sans", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li { list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 a {
+    font: size 50px;
+    color: #020202;
+}
+
+h2 {
+    padding: 120px;
+    bottom: 600px;
+    font-family: "Dancing Script", cursive;
+    background-color: rgb(189, 238, 231);
+    font-size: 40px;
+}
+.Menu {color: #020202;}
+
+h3 { 
+  background-color: #77c9b7;
+  border: none;
+  border-radius: 40px 10px;
+  background:#77c9b7;
+
+  display: inline;
+    font-family: "Caveat", cursive;
+    margin: 1.5em;
+    padding: 1em;
+}
+    
+
+p {  
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+    padding: 0,8em;
+    margin: 1em;
+    border: 1px;
+}
+
+h4 {
+    font-family: "Caveat", cursive;
+    font-size: 60px;
+    background-color: rgb(189, 238, 231);
+}
+
+header {
+    font-family: "Caveat", cursive;
+    justify-content: center;
+    align-items: center ;
+    padding: 2em;
+}
+
+.sección-1 {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 6em;
+}
+
+
+section.sección-1 img {
+   margin: 0,5em;
+   padding: 2em;
+    width: 100%;
+    height: 100%;
+}
+
+section.sección-2 img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display:flex;
+  background-color: rgb(158, 167, 167);
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+header nav ul {
+    display:flex;
+    gap: 1.5em;
+    margin: 0.5em;
+}
+
+.sección-3 img {
+  margin: 1em;
+  width: 250px;
+  height: 250px;
+
+}
+footer {  
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display:flex;
+  background-color: rgb(158, 167, 167);
+  align-items: first baseline;
+  justify-content: flex-start;
+  margin: 0px;
+  padding: 0px;}
+
+ .contacto ul li {   
+  list-style: none;
+ }
+ .contacto a{ text-decoration: none; }
+  
+ /* Menu */
+  #check {
+    display: none;
+  }
+  .checkbtn{
+    font-size: 25px;
+    color: rgb(3, 3, 3);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  /*MEDIA QUERIES/*
+
+ /* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+
+    .sección-1 {
+      display:block;
+      justify-content: center;
+      align-items: center;
+      padding: 6em;
+      }
+    .checkbtn {
+        display: block;
+    }
+      #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color:  #77c9b7;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+      }
+    
+      #check:checked ~ ul {
+        left: 0;
+        display: block;
+      }
+    
+      #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        
+      }
+    
+      #encabezado nav ul li a {
+        font-size: 20px;
+      }
+    
+      #check:checked ~ .checkbtn {
+        color: blue;
+      }
+
+}
+
+/* ------------- CSS General ------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color:  #020202;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+/* ------------- Encabezado Contacto ------------- */
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-header {
+  text-align: center;
+  background-color: #e6e9ee;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 60%;
+  margin: 10px auto;
+  padding: 40px;
+}
+
+.form-header h5 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  background-color: #f6f7f8;
+  border: 1px solid #a9abad;
+  border-radius: 50px;
+
+  width: 80%;
+  padding: 40px;
+  margin: 10px 0 40px 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"]{
+  background-color: rgb(189, 238, 231);
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+  .form-header {
+    padding: 50px;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .form-row input[type="text"] {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+}
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+
+  background-color: rgb(189, 238, 231);
+  border: 0;
+  border-radius: 6px;
+
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+
+  width: 100%;
+}
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+.form-row textarea {
+    width: 250px;
+  }
+  .form-row button {
+      font-size: 16px;
+      font-weight: bold;
+    
+    
+      color: #ffffff;
+      background-color:#77c9b7;
+    
+    
+      border: none;
+      border-radius: 3px;
+    
+    
+      padding: 10px 80px;
+      cursor: pointer;
+    }
+    
+    
+    .form-row button:hover {
+      background-color: #76aeed;
+    }
+    
+    
+    .form-row button:active {
+      background-color: #407fc7;
+    }
+    
+    
+    /* ------------- Para Pantallas de más de 700px ------------- */
+    
+    
+    .form-row button {
+        margin-left: 120px;}      
