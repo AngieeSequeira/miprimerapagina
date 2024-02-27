@@ -232,7 +232,7 @@ body {
   border: 1px solid #a9abad;
   border-radius: 50px;
 
-  width: 80%;
+  width: 95%;
   padding: 40px;
   margin: 10px 0 40px 0;
 }
@@ -343,6 +343,4 @@ body {
     .form-row button {
         margin-left: 120px;}      
 
-      .greeting {
-        color: red;
-      }
+    .greeting{ color: #77c9b7;}
